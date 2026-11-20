@@ -1,0 +1,89 @@
+{
+ "roles": {
+  "admin": {
+   "label": "Admin",
+   "actions": []
+  },
+  "doctor": {
+   "label": "Doctor",
+   "status": true,
+   "actions": [
+    {
+     "icon": "😴",
+     "label": "Resting",
+     "text": "is Resting",
+     "to": "reception",
+     "color": "#FF453A",
+     "claim": false
+    },
+    {
+     "icon": "🏥",
+     "label": "Patient Ready",
+     "text": "- Patient Ready",
+     "to": "reception",
+     "color": "#30D158",
+     "claim": false
+    }
+   ]
+  },
+  "reception": {
+   "label": "Reception",
+   "actions": [
+    {
+     "icon": "📸",
+     "label": "Photo Required",
+     "text": "Photo Required",
+     "to": "photo",
+     "color": "#0A84FF",
+     "claim": true
+    }
+   ]
+  },
+  "photo": {
+   "label": "Photo Staff",
+   "actions": []
+  }
+ },
+ "users": {
+  "admin": {
+   "name": "Admin",
+   "role": "admin",
+   "pw": "c3b19a9aed8ca886f94de8be1d11f5cd1a9f9263cc23aa402ab8b013e2b228e4"
+  },
+  "dr_anchal": {
+   "name": "Dr. Anchal Shah",
+   "role": "doctor",
+   "pw": "ad9a85c54658254a4ee7b307c0a3d5face2eec9b6e679b2e86b881d3790b777d"
+  },
+  "dr_diwaker": {
+   "name": "Dr. Diwaker Sharma",
+   "role": "doctor",
+   "pw": "ab6c1a3b0e592713b48fab9ec36a74990d96ba5ec5d6f0bd90438a4e909731df"
+  },
+  "reception1": {
+   "name": "Reception 1",
+   "role": "reception",
+   "pw": "65b8ebb40e574bba140ddc47e327e82ffee4fe641eb1ec1c25ecaf319e40d293"
+  },
+  "reception2": {
+   "name": "Reception 2",
+   "role": "reception",
+   "pw": "5b2ff96b1d66475aac0f40b696f4e3180fe4c7913d8129ed8bc44932b15cd16c"
+  },
+  "dhaval": {
+   "name": "Dhaval",
+   "role": "photo",
+   "pw": "689e38360c6db2198f9bab27f43c94cd4ef149e6a2c4a713902037eb4241e86b"
+  },
+  "vaibhav": {
+   "name": "Vaibhav",
+   "role": "photo",
+   "pw": "0942a5fc918e9984e07afa22dcfe19fa1c063d569a8f18813ca7db3e0a355f57"
+  }
+ },
+ "msgs": [],
+ "status": {},
+ "dnd": {
+  "admin": false
+ }
+}
